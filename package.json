@@ -1,0 +1,25 @@
+{
+  "name": "begin-util",
+  "version": "1.0.0",
+  "description": "Utility functions for Beg.in packages",
+  "engines": {
+    "node": ">=7.6"
+  },
+  "main": "index.js",
+  "scripts": {
+    "b": "CONTEXT=$(pwd) npm explore begin-project -- npm run"
+  },
+  "repository": "Beg-in/util",
+  "author": "beg.in <info@beg.in> (beg.in)",
+  "contributors": [
+    "Brian Jesse <brian.jesse@gmail.com> (brianjesse.com)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Beg-in/util/issues"
+  },
+  "homepage": "https://github.com/Beg-in/util#readme",
+  "devDependencies": {
+    "begin-project": "0.1.0"
+  }
+}
