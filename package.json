@@ -1,6 +1,6 @@
 {
   "name": "begin-util",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Utility functions for Beg.in packages",
   "engines": {
     "node": ">=7.6"
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/Beg-in/util#readme",
   "devDependencies": {
-    "begin-project": "0.1.0"
+    "begin-project": "0.2.1"
   }
 }
