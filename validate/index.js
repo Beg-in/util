@@ -184,5 +184,6 @@ module.exports = Object.assign(obj => {
   // TODO: Hex color
   // TODO: Base64 file (datauri?)
   // TODO: Telephone number (international)
+  // TODO: Domain addresses
 });
 

@@ -1,6 +1,6 @@
 'use strict';
 
-let node = require('begin-project/node');
+let node = require('begin-project/lint');
 
 module.exports = node;
 
