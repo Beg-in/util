@@ -29,4 +29,3 @@ module.exports = {
     return arg instanceof Date && !Number.isNaN(arg.valueOf());
   },
 };
-
