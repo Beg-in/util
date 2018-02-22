@@ -27,5 +27,3 @@ test('merge deep extra args', t => {
   let out = { foo: { bar: 'bang' } };
   t.deepEqual(assignDeep({ foo: { bar: 'baz' } }, { foo: 'nope' }, out), out);
 });
-
-

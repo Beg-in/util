@@ -1,9 +1,20 @@
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/Beg-in/util/compare/1.3.0...1.4.0) (2018-02-22)
+
+
+### Features
+
+* **map-object:** add map object function with tests ([ff5abb5](https://github.com/Beg-in/util/commit/ff5abb5))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/Beg-in/util/compare/1.2.0...1.3.0) (2018-01-31)
 
 
 ### Features
 
+* **async:** add async timeout ([7e1f017](https://github.com/Beg-in/util/commit/7e1f017))
 * **async:** add async timeout ([c38ca5f](https://github.com/Beg-in/util/commit/c38ca5f))
 
 
