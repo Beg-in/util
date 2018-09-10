@@ -1,13 +1,13 @@
 'use strict';
 
-let { isDate, isObject, isArray } = require('../');
+let { isDate, isObject, isArray, isRegex } = require('../');
 
 function assignDeep(target, ...sources) {
   if (sources.length < 1) {
     if (isDate(target)) {
       return new Date(target.getTime());
     }
-    if (isObject(target)) {
+    if (!isRegex(target) && isObject(target)) {
       return Object.entries(target).reduce((output, [key, value]) => {
         output[key] = assignDeep(value);
         return output;
@@ -27,7 +27,7 @@ function assignDeep(target, ...sources) {
       });
       return output;
     }
-    if (!isDate(source) && isObject(source) && isObject(output)) {
+    if (!isRegex(source) && !isDate(source) && isObject(source) && isObject(output)) {
       Object.entries(source).forEach(([key, value]) => {
         output[key] = assignDeep(target[key], value);
       });

@@ -1,10 +1,20 @@
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/Beg-in/util/compare/1.4.0...1.5.0) (2018-09-10)
+
+
+### Bug Fixes
+
+* **assign-deep:** do not merge regex type ([374ff4b](https://github.com/Beg-in/util/commit/374ff4b))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/Beg-in/util/compare/1.3.0...1.4.0) (2018-02-22)
 
 
 ### Features
 
-* **map-object:** add map object function with tests ([ff5abb5](https://github.com/Beg-in/util/commit/ff5abb5))
+* **map-object:** add map object function with tests ([a1d2444](https://github.com/Beg-in/util/commit/a1d2444))
 
 
 
