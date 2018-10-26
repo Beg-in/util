@@ -1,10 +1,20 @@
+<a name="1.5.1"></a>
+## [1.5.1](https://github.com/Beg-in/util/compare/1.5.0...1.5.1) (2018-10-26)
+
+
+### Bug Fixes
+
+* **validate:** fix primitive types ([14fedf5](https://github.com/Beg-in/util/commit/14fedf5))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/Beg-in/util/compare/1.4.0...1.5.0) (2018-09-10)
 
 
 ### Bug Fixes
 
-* **assign-deep:** do not merge regex type ([374ff4b](https://github.com/Beg-in/util/commit/374ff4b))
+* **assign-deep:** do not merge regex type ([280252c](https://github.com/Beg-in/util/commit/280252c))
 
 
 

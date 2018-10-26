@@ -23,7 +23,7 @@ let required = (fn, ...args) => value => {
 let rule = (fn, message, status) => {
   let test = value => util.isRegex(fn) ? fn.test(value) : fn(value);
   let trial = value => {
-    if (!test(`${value}`.trim())) {
+    if (!test(util.isRegex(fn) ? `${value}`.trim() : value)) {
       throw new ApiError(message, status);
     }
     return util.isString(value) ? value.trim() : value;

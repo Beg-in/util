@@ -38,6 +38,12 @@ test(macros, 'nonempty', '1', ' ');
 test(macros, 'short', '12', '1');
 test(macros, 'email', 'yep@example.com', 'nope');
 test(macros, 'password', 'drowssap11', 'nope');
+test(macros, 'string', 'foo', false);
+test(macros, 'boolean', true, 'nope');
+test(macros, 'boolean', false, 'nope');
+test(macros, 'number', 5.1, 'nope');
+test(macros, 'number', 5, 'nope');
+test(macros, 'integer', 5, 5.1);
 
 test('object optional', t => {
   let rules = validate({
