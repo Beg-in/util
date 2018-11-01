@@ -133,3 +133,16 @@ test('inner object required', t => {
   t.notThrows(() => rules(example));
   t.true(rules.test(example));
 });
+
+test('in array', t => {
+  const arr = ['a', 'b', 'c'];
+  const notIn = 'd';
+  const isIn = 'b';
+  let rule = validate.in(arr);
+  t.throws(() => rule(notIn));
+  t.false(rule.test(notIn));
+  t.notThrows(() => rule(isIn));
+  t.true(rule.test(isIn));
+  t.notThrows(() => rule());
+  t.throws(() => rule.required());
+});

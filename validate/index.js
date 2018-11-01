@@ -140,36 +140,47 @@ module.exports = Object.assign(obj => {
 
   // TODO: have this validate types and inner objects
   array: rule(
-    value => util.isArray(value),
+    util.isArray,
     'Must be an array',
     ERROR_CODES.serverError.status
   ),
 
   // TODO: Match specific string
   string: rule(
-    value => util.isString(value),
+    util.isString,
     'Must be a string',
     ERROR_CODES.serverError.status
   ),
 
   boolean: rule(
-    value => util.isBoolean(value),
+    util.isBoolean,
     'Must be a boolean',
     ERROR_CODES.serverError.status
   ),
 
   // TODO: Ranges of numbers
   number: rule(
-    value => util.isNumber(value),
+    util.isNumber,
     'Must be a number',
     ERROR_CODES.serverError.status
   ),
 
   integer: rule(
-    value => util.isInteger(value),
+    util.isInteger,
     'Must be an integer',
     ERROR_CODES.serverError.status
   ),
+
+  in: arr => {
+    if (util.isObject(arr)) {
+      arr = Object.values(arr);
+    }
+    return rule(
+      value => arr.includes(value),
+      `Must be one of ${arr.join(', ')}`,
+      ERROR_CODES.serverError.status
+    );
+  },
 
   // TODO: Dates and ranges
 
